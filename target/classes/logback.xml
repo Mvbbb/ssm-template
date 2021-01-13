@@ -6,6 +6,13 @@
             <charset>UTF-8</charset>
         </encoder>
     </appender>
+
+    <!--    设置日志级别-->
+    <root level="debug">
+        <appender-ref ref="console"/>
+    </root>
+
+
     <!--
     日志输出级别
         error: 错误,系统故障日志
@@ -14,6 +21,7 @@
         debug: 程序内部用于调试
         trace: 程序内部用于追终   
     -->
+<!--    将日志输出到文件-->
 <!--    <appender name="accessHistoryLog" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
 <!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
 <!--            <fileNamePattern>E:/Desktop/New folder/intercepter/history/history.%d.log</fileNamePattern>-->
@@ -22,8 +30,5 @@
 <!--            <pattern>[%thread] %d  %level %logger{10} - %msg%n</pattern>-->
 <!--        </encoder>-->
 <!--    </appender>-->
-    <root level="debug">
-        <appender-ref ref="console"/>
-    </root>
     
 </configuration>

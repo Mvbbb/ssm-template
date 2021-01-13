@@ -10,7 +10,10 @@ import javax.annotation.Resource;
 public class TestService {
     @Resource
     private TestMapper testMapper;
-    
+
+    /**
+     * 注解开启声明式事务
+     */
     @Transactional
     public void batchImport(){
         for(int i=0;i<5;i++){

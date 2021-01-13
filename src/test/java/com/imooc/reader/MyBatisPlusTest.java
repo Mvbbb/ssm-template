@@ -15,6 +15,7 @@ import java.util.List;
 public class MyBatisPlusTest {
     @Resource
     private TestMapper testMapper;
+    
     @org.junit.Test
     public void testInsert(){
         Test test = new Test();
@@ -25,13 +26,13 @@ public class MyBatisPlusTest {
     @org.junit.Test
     public void testUpdate(){
         Test test = testMapper.selectById(31);
-        test.setContent("cshi");
+        test.setContent("测试");
         testMapper.updateById(test);
     }
     
     @org.junit.Test
     public void testDelete(){
-        testMapper.deleteById(31);
+        testMapper.deleteById(32);
     }
 
     /**

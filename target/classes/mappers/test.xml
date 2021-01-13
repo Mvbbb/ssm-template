@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+<!--在Mybatis-plus提供的crud方法上,用户还可以自己额外添加方法-->
 <mapper namespace="com.imooc.reader.mapper.TestMapper">
     <insert id="insertSample">
         insert into test(content)value ('测试内容')

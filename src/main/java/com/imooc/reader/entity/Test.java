@@ -11,6 +11,7 @@ public class Test {
     @TableField("id")
     @TableId(type= IdType.AUTO)
     private Integer id;
+    
     @TableField("content")  // 如果字段名与属性名相同或者符合驼峰命名转换规则,则该注解可以省略
     private String content;
 
